@@ -7,13 +7,41 @@
 <head>
     <!-- meta elements-->
     <meta charser="ütf-8">
-    <meta name="Ëliana" content="BBIT">
+    <meta name="author" content="Eliana">
     <meta name="description" content="your ultimate GTA 6 fun page">
     <meta name="keywords" content="games,key2,key3">
     <!--5.title -->
-    <title>GTA</title>
+    <title>GTA6</title>
     <!--other elements to here-->
     <!-- styles , scripts, favicon -->
+     <style>
+        /* an element selector */
+        /* example h1 we are selecting all headings ones on this page */
+        /*<h1>h1, <div> div,main,p,footer*/
+        h1{
+            /*a declaration*/
+            color:blue;
+            font-size:48px;
+
+        }
+        /* a class selector*/
+        /* class can have many elements*/
+        /* all the elements with a class of .section-heading*/
+        /*one or many elements*/
+        .section-heading{
+            color:green;
+            font-size:48px;
+
+        }
+        /* an id selector starts with a # */
+        /* one or many elements*/
+        #about{
+            background-color: aliceblue;
+
+        }
+     </style>
+     <!-- an external css file -->
+     <link rel="stylesheet" href="css/style.css">
 
 
 </head>
@@ -24,9 +52,9 @@
     <!-- Add header semantic tag -->
     <!-- Add main heading -->
     <!-- Make "Rockstar Games" bold -->
-    <header>
+    <header style="background-color: lightcoral;">
         <! -- h1, h2, h3, h4, h5, h6 -->
-            <h1>Grand Theft Auto VI</h1>
+            <h1 name="title">Grand Theft Auto VI</h1>
             <p> <!--paragraph text-->
                 The generation open-world crime game by
                 <b>Rockstar Games </b>
@@ -84,19 +112,19 @@
 
     <!-- Add main semantic tag -->
     <main>
-        <section> id="about">
-            <h2>About the game</h2>
+        <section> id="about" name="about">
+            <h2 class="section-heading">About the game</h2>
             <p>
 
-                <b></b>GTA 6</b> is expected to take players back to <i>Vice City</i> with a massive open world, new
+                <b>GTA 6</b> is expected to take players back to <i>Vice City</i> with a massive open world, new
                 characters, and improved gameplay mechanics.
                 <i>Vice City</i> with a massive open world
                 new characters, and improved gameplay mechanics.
             </p>
 
         </section>
-        <section> id="features">
-            <h2>Expected Features</h2>
+        <section> id="features" name="features">
+            <h2 class="section-heading">Expected Features</h2>
             
             <h4>Gameplay Features</h4>
             <ul> <!-- unordered list -->
@@ -114,8 +142,8 @@
             </ol>
 
         </section>
-        <section> id="characters">
-            <h2>Main Characters</h2>
+        <section id="characters" >
+            <h2 class="section-heading">Main Characters</h2>
             <article>
                 <h5>Lucia</h5>
                 <p>
@@ -131,8 +159,8 @@
             </article>
 
         </section>
-        <section id="logo">
-            <h2>Game Preview</h2>
+        <section id="logo" name="logo">
+            <h2 class="section-heading">Game Preview</h2>
             <img src="gta6-logo.png" alt="GTA 6 Logo image" width="50%">
         </section>
     </main>
