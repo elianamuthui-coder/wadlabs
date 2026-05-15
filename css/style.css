@@ -166,7 +166,7 @@ section{
 section:hover{
     border-left-color:var(--col-cyan);
 }
-p{
+p , h4{
     color:var(--col-cream);
 
 }
@@ -186,3 +186,23 @@ h2{
     border-bottom-style:solid;
     border-bottom-width:2px;
 }
+main ul,main ol{
+    padding-left:20px;
+    color:var(--col-cream);
+}
+main li{
+    margin-left:4px;
+}
+/*psuedo class selector*/
+li:first-child{
+    color:var(--col-pink-soft);
+    font-weight:bold;
+}
+/*pseudo-element selector*/
+main ul li::marker{
+    color:var(--col-cayan)
+}
+main ol li::marker{
+    color:var(--col-coral);
+}
+
