@@ -1,18 +1,10 @@
 /* ============================================================
    GTA VI FAN PAGE COLOR SYSTEM
    Inspired by the official GTA VI visual style
-   ============================================================ 
-  
-   CSS Colors
-    - named e.g. blue, green (limited)
-    - hex - use hexadecimal values (0-9A-F) e.g. #RRGGBB #FFFFFF(white), #000000(black) - (Most common in web design)
-    - rgb - use 0-255 e.g. rgb(255,255,255) -white, rgb(0,0,0) - black
-    - rgba same as rgb but includes a transparency value between 0-1 (0 = invisible 1 = fully visible) (last item) e.g rgba(25,55,66,0.5) 
-*/
+   ============================================================ */
 
 /*
 :root targets the <html> element.
-It is the highest-level element on the page.
 Variables defined here become available everywhere in the stylesheet.
 */
 
@@ -22,104 +14,127 @@ Variables defined here become available everywhere in the stylesheet.
        BACKGROUND COLORS
        =============================== */
 
-    /* Deep night blue */
     --col-bg-deep: #08131f;
-
-    /* Main dark surface */
     --col-bg-mid: #102030;
-
-    /* Transparent glass effect */
     --col-bg-light: rgba(16, 32, 48, 0.82);
 
     /* ===============================
        PRIMARY ACCENT COLORS
        =============================== */
 
-    /* Neon cyan */
     --col-cyan: #00d5d8;
-
-    /* Bright electric cyan */
     --col-cyan-light: #4ff6ea;
-
-    /* GTA VI pink/coral */
     --col-coral: #ff4f87;
-
-    /* Soft neon pink */
     --col-pink-soft: #ff9bb3;
-
-    /* Sunset orange */
     --col-sunset: #ff9f43;
-
-    /* Warm amber */
     --col-amber: #ffc46b;
 
     /* ===============================
        TEXT COLORS
        =============================== */
 
-    /* Main light text */
     --col-cream: #fff8f2;
-
-    /* Secondary muted text */
     --col-muted: #7ea0b3;
 }
 
-body{
+body {
+
     font-family: 'Instrument Sans', sans-serif;
     font-size: 16px;
-    font-weight: 400;/*normal*/
-    background-color:var(--col-cream);
-    /*shorthand*/
-    margin:0;
-    /*long hand version*/
-    margin-top:0;
-    margin-right:0;
-    margin-bottom:0;
-    margin-left:0;
+    font-weight: 400;
 
-    line-height:1.7;
-}
-/*group selector*/
-h1,h2{
-    font-family: 'Young-serrif', serif;
+    background-color: var(--col-cream);
+
+    margin: 0;
+
+    line-height: 1.7;
 }
 
-header{
-    padding-top:5px;
-    
-    padding-bottom:20px;
-    /*box-model*/
-    
-    border-bottom-width:2px;
-    border-bottom-style:solid;
-    border-bottom-color:var(--col-cyan);
-    text-align:center;
+/* Group selector */
+
+h1,
+h2 {
+
+    font-family: 'Young Serif', serif;
 }
-/*variouss ways of selecting the main heading (hi) given our html structure*/
 
-header h1{
-    /*
-    units
-    */
+/* Header styling */
 
-    font-size:3.5em;/*3.5*16px */
+header {
+
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--col-cyan);
+
+    text-align: center;
+}
+
+/* Main heading */
+
+header h1 {
+
+    font-size: 3.5em;
+
     letter-spacing: 8px;
-    text-transform:uppercase;
-    color:var(--col-coral);
-    /*box model*/
 
-    margin-left:8px;
-    margin-bottom:0;
-    margin-top:0;
-    margin-right:0;
+    text-transform: uppercase;
+
+    color: var(--col-coral);
+
+    margin-left: 8px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
 }
-/*
-direct child selector
-b
-*/
-header > b{
-    color:var(--col-sunset);
-    letter-spacing:2px;
-    font-size:0.95em;
 
+/* Paragraph inside header */
+
+header p {
+
+    color: var(--col-sunset);
+
+    letter-spacing: 2px;
+
+    font-size: 0.95em;
+}
+
+nav{
+    margin-top:10px;
+}
+nav ul{
+    list-style:nane;
+    padding:0;/*top,bottom,left and right-0*/
+    margin:0;/*all margins*/
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+/*what selector is this*/
+nav ul li a{
+    color:var(--col-bg-deep);
+    text-decoration:nane;
+    font-size:1.1em;
+    letter-spacing:2x;
+    text-transform:uppercase;
+    /*what regions do each of the four padding areas have
+    padding-top
+    padding-bottom
+    padding-right
+    padding-left
+    */
+    padding:16px a16px;
+    border:2px solid var(--col--cyan--light);
+    border-width: 2px;
+    border-style:solid;
+    border-color:var(--col-cyan-light);
+    border-radius: 16px;
+
+}
+/*pseudo-class selector*/
+nav ul li a:hover{
+    background-color: var(--col-cyan-light);
+    color:var(--col-cream);
 }
