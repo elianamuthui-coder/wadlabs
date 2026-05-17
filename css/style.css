@@ -219,4 +219,15 @@ footer p{
 h1{
     border:1px solid var(--col-cyan);
 }
+/*characters grid*/
+.characters-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+article h4{
+    border-top:2px solid var(--col-cyan);
+
+
+}
 
