@@ -205,4 +205,18 @@ main ul li::marker{
 main ol li::marker{
     color:var(--col-coral);
 }
+img{
+    max-width: 100%; /*parent*/
+    border-radius:10px;
+
+}
+footer{
+    text-align:center;
+}
+footer p{
+    color:var(--color-muted);
+}
+h1{
+    border:1px solid var(--col-cyan);
+}
 
