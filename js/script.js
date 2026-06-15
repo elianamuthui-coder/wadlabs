@@ -151,9 +151,10 @@ bbit_2b_students.forEach(function (student){
 //@TODO:SHOW LOOPING OF OBJECTYS
 
 // getting the keys of an objecty as an array
-//console.log(bbit_2b_students.keys().toArray()); 
+console.log(Object.keys(student));
+
 // getting the values of an object as an array
-//console.log(bbit_2b_students.values().toArray());
+console.log(Object.values(student));
 
 // getting both keys and values of an object
-//console.log(bbit_2b_students.entries().toArray());
+console.log(Object.entries(student));
