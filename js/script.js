@@ -153,8 +153,40 @@ bbit_2b_students.forEach(function (student){
 // getting the keys of an objecty as an array
 console.log(Object.keys(student));
 
+
 // getting the values of an object as an array
 console.log(Object.values(student));
 
 // getting both keys and values of an object
 console.log(Object.entries(student));
+
+/* DOM - Document Object Model (tree-like) */
+console.log(document);
+//console.log(document);
+
+// Elements on our page variables 
+const heading = document.querySelector("#mainHeading");
+console.log(heading);
+
+const previewImage = document.querySelector("img");
+console.log(previewImage);
+
+const aboutSection = document.getElementById("about");
+console.log(aboutSection);
+
+// all the selections 
+const allParagraphs = document.querySelectorAll('selector');
+console.log(allSelections);
+
+
+const allNavLinks = document.querySelectorAll("vav a");
+console,log(allNavLinks);
+
+let aboutParagraph = document.querySelector("#about p");
+
+// change its text
+aboutParagraph.textContent = "This text was changed!";
+aboutParagraph.style.color = "red";
+
+
+
